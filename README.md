@@ -1,4 +1,4 @@
-# Yet another minecraft server docker container
+# Yet another minecraft server docker image
 
 ### But... why ?
 

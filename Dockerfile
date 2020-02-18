@@ -2,7 +2,7 @@
 FROM adoptopenjdk/openjdk11:x86_64-alpine-jre-11.0.6_10
 
 # Create a group and user minecraft
-RUN addgroup -g 1002 -S minecraft && adduser -S minecraft -G minecraft -u 1002
+RUN addgroup -g 1002 -S minecraft && adduser minecraft -S -G minecraft -u 1002 -s /sbin/nologin
 # Tell docker that all future commands should run as minecraft user
 USER minecraft
 

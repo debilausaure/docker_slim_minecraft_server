@@ -20,10 +20,10 @@ itzg/minecraft-server           latest                        9a49bf0206ad      
 * Vanilla 1.15 Server
 * Server executed as non-root user minecraft:minecraft (uid:1002, gid:1002)
 * Volume mounted server configuration and worlds (located in `/home/minecraft/conf`).
+* Automatic backup of your worlds to Mega.nz (check out the [sibling container](https://github.com/debilausaure/docker_minecraft_mega_backuper) of ~13MB)
 
 #### Planned Features
 
-* ~~Automatic backup of your worlds to Mega~~ (done, but moved to another image).
 * Health checks
 
 ## Get Started

@@ -2,10 +2,10 @@
 
 ### But... why ?
 
-The most famous minecraft docker image at this time is [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server).
+The most famous minecraft docker image at this time is [itzg/docker-minecraft-server](https://github.com/itzg/docker-minecraft-server).  
 While itzg's image is very convenient and packed with lots of features (kudos to [itzg](https://github.com/itzg)), I find it to be a bit overkill.
 
-This repository is meant to allow you to build a minimal docker image, providing a functional vanilla minecraft server and some backup tools (*to be added soon™*).
+This repository is meant to allow you to build a minimal docker image, providing a functional vanilla minecraft server that does not compromise on security.
 
 The result is that this docker image is **significantly** smaller than itgz's.
 

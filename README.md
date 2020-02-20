@@ -23,8 +23,7 @@ itzg/minecraft-server           latest                        9a49bf0206ad      
 
 #### Planned Features
 
-* Automatic backup of your worlds to Mega
-* Rcon configuration
+* ~~Automatic backup of your worlds to Mega~~ (done, but moved to another image).
 * Health checks
 
 ## Get Started

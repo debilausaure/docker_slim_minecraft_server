@@ -9,7 +9,7 @@ RUN java -jar fabric-installer.jar server -mcversion 1.19.3 -downloadMinecraft
 FROM eclipse-temurin:19-jre-alpine
 
 # Create a group and user minecraft
-RUN addgroup --gid 1002 --system minecraft && adduser minecraft --system --ingroup minecraft --uid 1002
+RUN addgroup -g 1002 -S minecraft && adduser minecraft -S -G minecraft -u 1002 -s /sbin/nologin
 # Tell docker that all future commands should run as minecraft user
 USER minecraft
 

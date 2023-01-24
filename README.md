@@ -7,19 +7,20 @@ While itzg's image is very convenient and packed with lots of features (kudos to
 
 This repository is meant to allow you to build a minimal docker image, providing a functional vanilla minecraft server that does not compromise on security.
 
-The result is that this docker image is **significantly** smaller than itgz's.
+The result is that this docker image is **significantly** smaller than itgz's. Here's the output of `docker images` :
 
 ```
-REPOSITORY                      TAG                           IMAGE ID            CREATED             SIZE
-alpine_mc                       latest                        435e736a5770        2 hours ago         183MB
-itzg/minecraft-server           latest                        9a49bf0206ad        2 months ago        333MB
+REPOSITORY              TAG             IMAGE ID       CREATED          SIZE
+alpine_mc               latest          4072a52f574c   33 minutes ago   234MB
+itzg/minecraft-server   latest          76b95cbb958c   10 hours ago     726MB
 ```
 
 ### Features
 
-* Vanilla 1.15 Server
+* Fabric 1.19.3 Server
+* Latest Java 19 runtime environment
 * Server executed as non-root user minecraft:minecraft (uid:1002, gid:1002)
-* Volume mounted server configuration and worlds (located in `/home/minecraft/conf`).
+* Volume mounted server configuration, worlds, and mods (located in `/home/minecraft/conf`).
 * Automatic backup of your worlds to Mega.nz (check out the [sibling container](https://github.com/debilausaure/docker_minecraft_mega_backuper) of ~13MB)
 
 #### Planned Features
@@ -34,6 +35,7 @@ Here are the preliminary steps to get your container running :
 
 * Clone the repository
 * Modify the configuration files to fit your needs under the `/conf` folder (notably, the `server.properties` file).
+* Add any mod you want to use inside the `/conf/mods` folder
 * Run `docker build -t tag_of_your_image /path/to/this/repository`
 
 ### Run the container
